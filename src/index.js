@@ -38,3 +38,37 @@ setInterval(function () {
     "h:mm:ss [<small>]A[</small>]"
   );
 }, 1000);
+
+// Dropdown
+
+function updatePlaceholder(event) {
+  let cityTimezone = event.target.value;
+  let cityTime = moment().tz(cityTimezone);
+  let cityName = cityTimezone.replace("_", " ").split("/")[1];
+  let placeholderElement = document.querySelector("#placeholder");
+  placeholderElement.innerHTML = `
+  <div class="city">
+        <div class="left">
+          <h2>${cityName}</h2>
+          <div class="date"></div>
+        </div>
+        <div class="time"></div>
+    </div>
+    <div class="hr"></div>
+        `;
+  setInterval(function () {
+    let cityTimezone = event.target.value;
+    let cityTime = moment().tz(cityTimezone);
+    let placeholderElement = document.querySelector("#placeholder");
+    let placeholderDateElement = placeholderElement.querySelector(".date");
+    let placeholderTimeElement = placeholderElement.querySelector(".time");
+
+    placeholderDateElement.innerHTML = cityTime.format("MMMM Do YYYY");
+    placeholderTimeElement.innerHTML = cityTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }, 1000);
+}
+
+let selectElement = document.querySelector("#city-dropdown");
+selectElement.addEventListener("change", updatePlaceholder);
