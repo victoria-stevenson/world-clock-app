@@ -11,20 +11,6 @@ setInterval(function () {
   );
 }, 1000);
 
-//Dublin
-setInterval(function () {
-  let dublinElement = document.querySelector("#dublin");
-  let dublinDateElement = dublinElement.querySelector(".date");
-  let dublinTimeElement = dublinElement.querySelector(".time");
-
-  let dublinTime = moment.tz("Europe/Dublin");
-
-  dublinDateElement.innerHTML = dublinTime.format("MMMM Do YYYY");
-  dublinTimeElement.innerHTML = dublinTime.format(
-    "h:mm:ss [<small>]A[</small>]"
-  );
-}, 1000);
-
 //Los Angeles
 setInterval(function () {
   let losAngelesElement = document.querySelector("#los-angeles");
