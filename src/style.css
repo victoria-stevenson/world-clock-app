@@ -5,7 +5,6 @@ body {
 
 h1 {
   text-align: center;
-
   font-size: 36px;
 }
 
@@ -17,7 +16,7 @@ h2 {
 select {
   display: block;
   width: 100%;
-  padding: 10px;
+  padding: 10px 10px 0 10px;
   border-radius: 6px;
   font-size: 17px;
 }
@@ -41,14 +40,12 @@ footer {
 .city {
   display: flex; /*means elements get displayed next to each other*/
   justify-content: space-between;
-  margin: 10px 0;
+  /* margin: 10px 0; */
   padding: 20px 0;
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.2); /*creates the dotted line in between*/
 }
 
-.city:last-child {
-  /*changes the "last thing"*/
-  border: none;
+.hr {
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
 }
 
 .date {
