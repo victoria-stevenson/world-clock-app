@@ -46,7 +46,7 @@ footer {
   border-bottom: 1px dashed rgba(0, 0, 0, 0.2); /*creates the dotted line in between*/
 }
 
-.cite:last-child {
+.city:last-child {
   /*changes the "last thing"*/
   border: none;
 }
