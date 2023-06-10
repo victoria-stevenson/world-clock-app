@@ -1,0 +1,67 @@
+body {
+  background-color: #f9f7fe;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+
+  font-size: 36px;
+}
+
+h2 {
+  margin: 0 0 5px;
+  font-size: 28px;
+}
+
+select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 17px;
+}
+
+footer {
+  text-align: center;
+  margin: 0 0 20px;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  background-color: white;
+  padding: 30px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 6px;
+}
+
+.city {
+  display: flex; /*means elements get displayed next to each other*/
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 20px 0;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2); /*creates the dotted line in between*/
+}
+
+.cite:last-child {
+  /*changes the "last thing"*/
+  border: none;
+}
+
+.date {
+  opacity: 0.6;
+  font-size: 12px;
+}
+
+.time {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.time small {
+  font-size: 24px;
+  vertical-align: middle;
+}
