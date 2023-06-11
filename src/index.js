@@ -57,7 +57,7 @@ function updatePlaceholder(event) {
         </div>
         <div class="time"></div>
     </div>
-    <div class="hr"></div>
+    <small><a href="/index.html">Back to World Clock</a><small>
         `;
   setInterval(function () {
     let cityTimezone = event.target.value;
